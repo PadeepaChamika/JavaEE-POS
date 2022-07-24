@@ -53,7 +53,7 @@ public class OrderBOImpl implements OrderBO {
         return orderDetailDTO.searchOrderDetails(connection, id);
     }
 
-    @Override
+    /*@Override
     public boolean placeOrder(Connection connection, OrderDTO orderDTO) {
         try {
             connection.setAutoCommit(false);
@@ -64,7 +64,7 @@ public class OrderBOImpl implements OrderBO {
                 connection.setAutoCommit(true);
                 return false;
             }
-            for (OrderDetailsDTO dto : orderDTO.get) {
+            for (OrderDetailsDTO dto : orderDTO.) {
                 OrderDetails orderDetail1 = new OrderDetails(dto.getOrderId(), dto.getItemId(), dto.getItemName(), dto.getUnitPrice(), dto.getBuyQty(), dto.getTotal());
                 boolean orderDetailAdded = orderDetailDAO.add(connection, orderDetail1);
                 if (!orderDetailAdded) {
@@ -95,5 +95,5 @@ public class OrderBOImpl implements OrderBO {
             }
         }
         return true;
-    }
+    }*/
 }
