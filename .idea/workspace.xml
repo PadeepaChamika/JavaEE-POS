@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="718dac36-636c-48e1-ae09-8c8983a68307" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaEE_Back_End/src/bo/custom/impl/OrderBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/src/bo/custom/impl/OrderBOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaEE_Back_End/src/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/src/dao/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaEE_Back_End/src/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/src/dto/OrderDTO.java" afterDir="false" />
-    </list>
+    <list default="true" id="718dac36-636c-48e1-ae09-8c8983a68307" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +38,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controller.filter" />
       <recent name="controller" />
       <recent name="dao" />
     </key>
@@ -73,7 +69,7 @@
       <workItem from="1657508139146" duration="675000" />
       <workItem from="1658632798320" duration="5711000" />
       <workItem from="1658639000226" duration="2425000" />
-      <workItem from="1658642012041" duration="3171000" />
+      <workItem from="1658642012041" duration="3704000" />
     </task>
     <servers />
   </component>
