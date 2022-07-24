@@ -1,10 +1,13 @@
 package dto;
 
+import java.util.ArrayList;
+
 public class OrderDTO {
     private String orderId;
     private String orderDate;
     private String customerId;
     private double total;
+    private ArrayList<OrderDetailsDTO> orderDetails;
 
     public OrderDTO() {
     }

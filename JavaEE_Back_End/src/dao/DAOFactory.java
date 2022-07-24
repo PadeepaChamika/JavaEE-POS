@@ -27,8 +27,6 @@ public class DAOFactory {
                 return new ItemDAOImpl();
             case ORDER:
                 return new OrderDAOImpl();
-            case ORDERDETAIL:
-                return new OrderDetailsDAOImpl();
             default:
                 return null;
         }

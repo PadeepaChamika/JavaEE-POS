@@ -2,7 +2,7 @@ package dto;
 
 public class OrderDetailsDTO {
     private String orderId;
-    private String itemCode;
+    private String itemId;
     private String itemName;
     private double unitPrice;
     private int buyQty;
@@ -11,9 +11,9 @@ public class OrderDetailsDTO {
     public OrderDetailsDTO() {
     }
 
-    public OrderDetailsDTO(String orderId, String itemCode, String itemName, double unitPrice, int buyQty, double total) {
+    public OrderDetailsDTO(String orderId, String itemId, String itemName, double unitPrice, int buyQty, double total) {
         this.orderId = orderId;
-        this.itemCode = itemCode;
+        this.itemId = itemId;
         this.itemName = itemName;
         this.unitPrice = unitPrice;
         this.buyQty = buyQty;
@@ -28,12 +28,12 @@ public class OrderDetailsDTO {
         this.orderId = orderId;
     }
 
-    public String getItemCode() {
-        return itemCode;
+    public String getItemId() {
+        return itemId;
     }
 
-    public void setItemCode(String itemCode) {
-        this.itemCode = itemCode;
+    public void setItemId(String itemId) {
+        this.itemId = itemId;
     }
 
     public String getItemName() {
@@ -72,7 +72,7 @@ public class OrderDetailsDTO {
     public String toString() {
         return "OrderDetailsDTO{" +
                 "orderId='" + orderId + '\'' +
-                ", itemCode='" + itemCode + '\'' +
+                ", itemId='" + itemId + '\'' +
                 ", itemName='" + itemName + '\'' +
                 ", unitPrice=" + unitPrice +
                 ", buyQty=" + buyQty +

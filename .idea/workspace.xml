@@ -2,68 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718dac36-636c-48e1-ae09-8c8983a68307" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/JavaEE_Front_End.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/images/Endless River.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/images/shopping-business-retail-shopping-cart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/jQuery/jquery-3.6.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/assets/styles/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/controller/Customer_Controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/controller/Item_Controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/controller/Place_Order_Controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/model/CustomerDTO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/model/ItemDTO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/model/OrderDTO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaEE_Front_End/model/OrderDetailsDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaEE-POS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/JavaEE_Back_End.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaEE_Back_End/JavaEE_Back_End.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/JavaEE_Back_End.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaEE_Back_End/src/bo/custom/impl/ItemBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/src/bo/custom/impl/ItemBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaEE_Back_End/src/bo/custom/impl/OrderBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/src/bo/custom/impl/OrderBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaEE_Back_End/src/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/src/dao/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaEE_Back_End/src/dao/custom/OrderDetailDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/src/dao/custom/OrderDetailDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaEE_Back_End/src/dao/custom/impl/ItemDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/src/dao/custom/impl/ItemDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaEE_Back_End/src/dao/custom/impl/OrderDetailDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/src/dao/custom/impl/OrderDetailDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaEE_Back_End/src/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/src/dto/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaEE_Back_End/src/dto/OrderDetailsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/src/dto/OrderDetailsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaEE_Back_End/src/entity/OrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_Back_End/src/entity/OrderDetails.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -93,12 +42,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/JavaEE_Back_End/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector-java-5.1.49.jar!/" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dao" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IJSE58\AAD\JavaEE-POS\JavaEE-POS\JavaEE_Back_End\src" />
       <recent name="D:\IJSE58\AAD\JavaEE-POS\JavaEE-POS\JavaEE_Back_End\src\bo" />
+      <recent name="D:\IJSE58\AAD\JavaEE-POS\JavaEE-POS\JavaEE_Back_End\src\dao" />
+      <recent name="D:\IJSE58\AAD\JavaEE-POS\JavaEE-POS\JavaEE_Back_End\src" />
       <recent name="D:\IJSE58\AAD\JavaEE-POS\JavaEE-POS\JavaEE_Front_End" />
       <recent name="D:\IJSE58\AAD\JavaEE-POS\JavaEE-POS" />
     </key>
@@ -120,6 +76,8 @@
       <workItem from="1657433245897" duration="58000" />
       <workItem from="1657471927878" duration="1619000" />
       <workItem from="1657508139146" duration="675000" />
+      <workItem from="1658632798320" duration="5711000" />
+      <workItem from="1658639000226" duration="1866000" />
     </task>
     <servers />
   </component>
@@ -127,6 +85,22 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1658636515313">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1658636515313" />
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1658637015695">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1658637015695" />
+    <state x="389" y="105" key="FileChooserDialogImpl" timestamp="1658636296881">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="389" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1658636296881" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1658636498786">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1658636498786" />
     <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1657472654403">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

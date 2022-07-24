@@ -18,7 +18,7 @@ public class ItemDAOImpl implements ItemDAO {
         while (rst.next()) {
             Item item = new Item(rst.getString(1), rst.getString(2), rst.getDouble(3), rst.getInt(4));
             JsonObjectBuilder itemObj = Json.createObjectBuilder();
-            itemObj.add("code", item.getCode());
+            itemObj.add("code", item.getId());
             itemObj.add("name", item.getName());
             itemObj.add("unitPrice", item.getUnitPrice());
             itemObj.add("qty", item.getQty());
@@ -29,12 +29,12 @@ public class ItemDAOImpl implements ItemDAO {
 
     @Override
     public boolean add(Connection connection, Item item) throws SQLException, ClassNotFoundException {
-        return CrudUtil.executeUpdate(connection, "INSERT INTO Item VALUES (?,?,?,?)", item.getCode(), item.getName(), item.getUnitPrice(), item.getQty());
+        return CrudUtil.executeUpdate(connection, "INSERT INTO Item VALUES (?,?,?,?)", item.getId(), item.getName(), item.getUnitPrice(), item.getQty());
     }
 
     @Override
     public boolean update(Connection connection, Item item) throws SQLException, ClassNotFoundException {
-        return CrudUtil.executeUpdate(connection, "UPDATE Item SET name=?,unitPrice=?,qtyOnHand=? WHERE code=?", item.getName(), item.getUnitPrice(), item.getQty(), item.getCode());
+        return CrudUtil.executeUpdate(connection, "UPDATE Item SET name=?,unitPrice=?,qtyOnHand=? WHERE code=?", item.getName(), item.getUnitPrice(), item.getQty(), item.getId());
     }
 
     @Override

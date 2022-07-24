@@ -2,7 +2,7 @@ package entity;
 
 public class OrderDetails {
     private String orderId;
-    private String itemCode;
+    private String itemId;
     private String itemName;
     private double unitPrice;
     private int buyQty;
@@ -11,9 +11,9 @@ public class OrderDetails {
     public OrderDetails() {
     }
 
-    public OrderDetails(String orderId, String itemCode, String itemName, double unitPrice, int buyQty, double total) {
+    public OrderDetails(String orderId, String itemId, String itemName, double unitPrice, int buyQty, double total) {
         this.orderId = orderId;
-        this.itemCode = itemCode;
+        this.itemId = itemId;
         this.itemName = itemName;
         this.unitPrice = unitPrice;
         this.buyQty = buyQty;
@@ -28,12 +28,12 @@ public class OrderDetails {
         this.orderId = orderId;
     }
 
-    public String getItemCode() {
-        return itemCode;
+    public String getItemId() {
+        return itemId;
     }
 
-    public void setItemCode(String itemCode) {
-        this.itemCode = itemCode;
+    public void setItemId(String itemId) {
+        this.itemId = itemId;
     }
 
     public String getItemName() {
@@ -72,7 +72,7 @@ public class OrderDetails {
     public String toString() {
         return "OrderDetails{" +
                 "orderId='" + orderId + '\'' +
-                ", itemCode='" + itemCode + '\'' +
+                ", itemId='" + itemId + '\'' +
                 ", itemName='" + itemName + '\'' +
                 ", unitPrice=" + unitPrice +
                 ", buyQty=" + buyQty +

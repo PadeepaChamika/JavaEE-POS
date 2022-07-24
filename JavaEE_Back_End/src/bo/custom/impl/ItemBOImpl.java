@@ -31,7 +31,7 @@ public class ItemBOImpl implements ItemBO {
 
     @Override
     public JsonObject generateItemId(Connection connection) throws SQLException, ClassNotFoundException {
-        return itemDAO.generateId(connection);
+        return itemDAO.generateCode(connection);
     }
 
     @Override

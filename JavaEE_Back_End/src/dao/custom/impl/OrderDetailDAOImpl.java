@@ -2,7 +2,8 @@ package dao.custom.impl;
 
 import dao.CrudUtil;
 import dao.custom.OrderDetailDAO;
-import entity.OrderDetail;
+import entity.OrderDetails;
+import entity.OrderDetails;
 
 import javax.json.Json;
 import javax.json.JsonArray;
@@ -18,10 +19,10 @@ public class OrderDetailDAOImpl implements OrderDetailDAO {
         ResultSet rst = CrudUtil.executeQuery(connection, "SELECT * FROM `Order Detail`");
         JsonArrayBuilder orderDetailsArray = Json.createArrayBuilder();
         while (rst.next()) {
-            OrderDetail orderDetail = new OrderDetail(rst.getString(1), rst.getString(2), rst.getString(3), rst.getDouble(4), rst.getInt(5), rst.getDouble(6));
+            OrderDetails orderDetail = new OrderDetails(rst.getString(1), rst.getString(2), rst.getString(3), rst.getDouble(4), rst.getInt(5), rst.getDouble(6));
             JsonObjectBuilder orderDetailObj = Json.createObjectBuilder();
             orderDetailObj.add("orderId", orderDetail.getOrderId());
-            orderDetailObj.add("itemCode", orderDetail.getItemCode());
+            orderDetailObj.add("itemCode", orderDetail.getItemId());
             orderDetailObj.add("itemName", orderDetail.getItemName());
             orderDetailObj.add("unitPrice", orderDetail.getUnitPrice());
             orderDetailObj.add("qty", orderDetail.getBuyQty());
@@ -32,12 +33,12 @@ public class OrderDetailDAOImpl implements OrderDetailDAO {
     }
 
     @Override
-    public boolean add(Connection connection,OrderDetail orderDetail) throws SQLException, ClassNotFoundException {
-        return CrudUtil.executeUpdate(connection,"INSERT INTO `Order Detail` VALUES (?,?,?,?,?,?)", orderDetail.getOrderId(), orderDetail.getItemCode(), orderDetail.getItemName(), orderDetail.getUnitPrice(), orderDetail.getBuyQty(), orderDetail.getTotal());
+    public boolean add(Connection connection,OrderDetails orderDetail) throws SQLException, ClassNotFoundException {
+        return CrudUtil.executeUpdate(connection,"INSERT INTO `Order Detail` VALUES (?,?,?,?,?,?)", orderDetail.getOrderId(), orderDetail.getItemId(), orderDetail.getItemName(), orderDetail.getUnitPrice(), orderDetail.getBuyQty(), orderDetail.getTotal());
     }
 
     @Override
-    public boolean update(Connection connection ,OrderDetail orderDetail) {
+    public boolean update(Connection connection ,OrderDetails orderDetail) {
         return false;
     }
 
@@ -47,7 +48,7 @@ public class OrderDetailDAOImpl implements OrderDetailDAO {
     }
 
     @Override
-    public OrderDetail search(Connection connection,String id) {
+    public OrderDetails search(Connection connection,String id) {
         return null;
     }
 
@@ -56,7 +57,7 @@ public class OrderDetailDAOImpl implements OrderDetailDAO {
         ResultSet rst = CrudUtil.executeQuery(connection, "SELECT * FROM `Order Detail` WHERE orderId=?", id);
         JsonArrayBuilder orderDetailArray = Json.createArrayBuilder();
         while (rst.next()) {
-            OrderDetail orderDetail = new OrderDetail(rst.getString(1), rst.getString(2), rst.getString(3), rst.getDouble(4), rst.getInt(5), rst.getDouble(6));
+            OrderDetails orderDetail = new OrderDetails(rst.getString(1), rst.getString(2), rst.getString(3), rst.getDouble(4), rst.getInt(5), rst.getDouble(6));
             JsonObjectBuilder obj = Json.createObjectBuilder();
             obj.add("orderId", orderDetail.getOrderId());
             obj.add("itemCode", orderDetail.getOrderId());
