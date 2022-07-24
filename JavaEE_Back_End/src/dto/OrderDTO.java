@@ -10,14 +10,15 @@ public class OrderDTO {
     private double total;
     private ArrayList<OrderDetailsDTO> orderDetails;
 
-    public OrderDTO(String orderId, String orderDate, String customerId, double orderTotal, JsonArray orderDetails) {
+    public OrderDTO(String orderId, String orderDate, String customerId, double total) {
     }
 
-    public OrderDTO(String orderId, String orderDate, String customerId, double total) {
+    public OrderDTO(String orderId, String orderDate, String customerId, double total, ArrayList<OrderDetailsDTO> orderDetails) {
         this.orderId = orderId;
         this.orderDate = orderDate;
         this.customerId = customerId;
         this.total = total;
+        this.orderDetails = orderDetails;
     }
 
     public String getOrderId() {
@@ -52,6 +53,14 @@ public class OrderDTO {
         this.total = total;
     }
 
+    public ArrayList<OrderDetailsDTO> getOrderDetails() {
+        return orderDetails;
+    }
+
+    public void setOrderDetails(ArrayList<OrderDetailsDTO> orderDetails) {
+        this.orderDetails = orderDetails;
+    }
+
     @Override
     public String toString() {
         return "OrderDTO{" +
@@ -59,6 +68,7 @@ public class OrderDTO {
                 ", orderDate='" + orderDate + '\'' +
                 ", customerId='" + customerId + '\'' +
                 ", total=" + total +
+                ", orderDetails=" + orderDetails +
                 '}';
     }
 }

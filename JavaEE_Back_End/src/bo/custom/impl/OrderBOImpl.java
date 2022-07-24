@@ -4,6 +4,7 @@ import bo.custom.OrderBO;
 import dao.DAOFactory;
 import dao.custom.ItemDAO;
 import dao.custom.OrderDAO;
+import dao.custom.OrderDetailsDAO;
 import dto.OrderDTO;
 import dto.OrderDetailsDTO;
 import entity.Order;
@@ -17,7 +18,7 @@ import java.sql.SQLException;
 public class OrderBOImpl implements OrderBO {
 
     OrderDAO orderDAO = (OrderDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.ORDER);
-    OrderDetailsDTO orderDetailsDTO = (OrderDetailsDTO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.ORDERDETAIL);
+    OrderDetailsDAO orderDetailDTOS = (OrderDetailsDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.ORDERDETAIL);
     ItemDAO itemDAO = (ItemDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.ITEM);
 
     @Override
@@ -32,7 +33,7 @@ public class OrderBOImpl implements OrderBO {
 
     @Override
     public JsonArray getAllOrderDetails(Connection connection) throws SQLException, ClassNotFoundException {
-        return orderDetailDTO.getAll(connection);
+        return orderDetailDTOS.getAll(connection);
     }
 
     @Override
@@ -47,7 +48,7 @@ public class OrderBOImpl implements OrderBO {
 
     @Override
     public JsonArray searchOrderDetails(Connection connection, String id) throws SQLException, ClassNotFoundException {
-        return orderDetailsDTO.searchOrderDetails(connection, id);
+        return orderDetailDTOS.searchOrderDetails(connection, id);
     }
 
     @Override
@@ -61,9 +62,9 @@ public class OrderBOImpl implements OrderBO {
                 connection.setAutoCommit(true);
                 return false;
             }
-            for (OrderDetailsDTO dto : orderDTO.orderDetailDTOS) {
+            for (OrderDetailsDTO dto : orderDTO.getOrderDetails()) {
                 OrderDetails orderDetail1 = new OrderDetails(dto.getOrderId(), dto.getItemId(), dto.getItemName(), dto.getUnitPrice(), dto.getBuyQty(), dto.getTotal());
-                boolean orderDetailAdded = orderDetailsDAO.add(connection, orderDetail1);
+                boolean orderDetailAdded = orderDetailDTOS.add(connection, orderDetail1);
                 if (!orderDetailAdded) {
                     connection.rollback();
                     connection.setAutoCommit(true);
@@ -71,7 +72,7 @@ public class OrderBOImpl implements OrderBO {
                 }
             }
 
-            for (OrderDetailsDTO dto : orderDTO.get) {
+            for (OrderDetailsDTO dto : orderDTO.getOrderDetails()) {
                 boolean updateQty = itemDAO.updateQty(connection, dto.getBuyQty(), dto.getItemId());
                 if (!updateQty) {
                     connection.rollback();
