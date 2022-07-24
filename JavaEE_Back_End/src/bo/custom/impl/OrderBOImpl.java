@@ -4,12 +4,9 @@ import bo.custom.OrderBO;
 import dao.DAOFactory;
 import dao.custom.ItemDAO;
 import dao.custom.OrderDAO;
-import dao.custom.OrderDetailDAO;
 import dto.OrderDTO;
 import dto.OrderDetailsDTO;
-import dto.OrderDetailsDTO;
 import entity.Order;
-import entity.OrderDetails;
 import entity.OrderDetails;
 
 import javax.json.JsonArray;
@@ -20,7 +17,7 @@ import java.sql.SQLException;
 public class OrderBOImpl implements OrderBO {
 
     OrderDAO orderDAO = (OrderDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.ORDER);
-    OrderDetailsDTO orderDetailDTO = (OrderDetailsDTO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.ORDERDETAIL);
+    OrderDetailsDTO orderDetailsDTO = (OrderDetailsDTO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.ORDERDETAIL);
     ItemDAO itemDAO = (ItemDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.ITEM);
 
     @Override
@@ -50,10 +47,10 @@ public class OrderBOImpl implements OrderBO {
 
     @Override
     public JsonArray searchOrderDetails(Connection connection, String id) throws SQLException, ClassNotFoundException {
-        return orderDetailDTO.searchOrderDetails(connection, id);
+        return orderDetailsDTO.searchOrderDetails(connection, id);
     }
 
-    /*@Override
+    @Override
     public boolean placeOrder(Connection connection, OrderDTO orderDTO) {
         try {
             connection.setAutoCommit(false);
@@ -64,9 +61,9 @@ public class OrderBOImpl implements OrderBO {
                 connection.setAutoCommit(true);
                 return false;
             }
-            for (OrderDetailsDTO dto : orderDTO.) {
+            for (OrderDetailsDTO dto : orderDTO.orderDetailDTOS) {
                 OrderDetails orderDetail1 = new OrderDetails(dto.getOrderId(), dto.getItemId(), dto.getItemName(), dto.getUnitPrice(), dto.getBuyQty(), dto.getTotal());
-                boolean orderDetailAdded = orderDetailDAO.add(connection, orderDetail1);
+                boolean orderDetailAdded = orderDetailsDAO.add(connection, orderDetail1);
                 if (!orderDetailAdded) {
                     connection.rollback();
                     connection.setAutoCommit(true);
@@ -95,5 +92,5 @@ public class OrderBOImpl implements OrderBO {
             }
         }
         return true;
-    }*/
+    }
 }

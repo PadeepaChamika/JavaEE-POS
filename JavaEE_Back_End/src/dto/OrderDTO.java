@@ -1,5 +1,6 @@
 package dto;
 
+import javax.json.JsonArray;
 import java.util.ArrayList;
 
 public class OrderDTO {
@@ -9,7 +10,7 @@ public class OrderDTO {
     private double total;
     private ArrayList<OrderDetailsDTO> orderDetails;
 
-    public OrderDTO() {
+    public OrderDTO(String orderId, String orderDate, String customerId, double orderTotal, JsonArray orderDetails) {
     }
 
     public OrderDTO(String orderId, String orderDate, String customerId, double total) {

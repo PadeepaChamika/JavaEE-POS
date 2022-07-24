@@ -1,8 +1,7 @@
 package dao.custom.impl;
 
 import dao.CrudUtil;
-import dao.custom.OrderDetailDAO;
-import entity.OrderDetails;
+import dao.custom.OrderDetailsDAO;
 import entity.OrderDetails;
 
 import javax.json.Json;
@@ -13,7 +12,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class OrderDetailDAOImpl implements OrderDetailDAO {
+public class OrderDetailsDAOImpl implements OrderDetailsDAO {
     @Override
     public JsonArray getAll(Connection connection) throws SQLException, ClassNotFoundException {
         ResultSet rst = CrudUtil.executeQuery(connection, "SELECT * FROM `Order Detail`");
