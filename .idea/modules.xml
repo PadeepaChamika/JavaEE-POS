@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JavaEE-POS.iml" filepath="$PROJECT_DIR$/JavaEE-POS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaEE-POS_Front_End.iml" filepath="$PROJECT_DIR$/JavaEE-POS_Front_End.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaEE_Back_End/JavaEE_Back_End.iml" filepath="$PROJECT_DIR$/JavaEE_Back_End/JavaEE_Back_End.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaEE_Front_End/JavaEE_Front_End.iml" filepath="$PROJECT_DIR$/JavaEE_Front_End/JavaEE_Front_End.iml" />
     </modules>
   </component>
 </project>
